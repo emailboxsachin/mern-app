@@ -6,6 +6,7 @@ import logo from './unnamed.jpg';
 import CreateTodo from "./components/create-todo.component";
 import EditTodo from "./components/edit-todo.component";
 import TodosList from "./components/todos-list.component";
+import DeleteTodo from "./components/delete-todo.component";
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
                 </nav>
                 <Route path="/" exact component={TodosList} />
                 <Route path="/edit/:id" exact component={EditTodo} />
+                <Route path="/delete/:id" exact component={DeleteTodo} />
                 <Route path="/create" exact component={CreateTodo} />
             </div>
             

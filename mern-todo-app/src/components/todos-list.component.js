@@ -9,7 +9,8 @@ const Todo = props=>(
         <td className={props.todo.todo_completed ? 'complete':''}> {props.todo.todo_priority}</td>
         <td>{props.todo.todo_completed ? 'yes':'no'}</td>
         <td> 
-            <Link to={"/edit/" + props.todo._id}>Edit</Link>
+            <Link to={"/edit/" + props.todo._id}>Edit</Link> |  
+            <Link to={"/delete/" + props.todo._id}>Delete</Link>
         </td>
     </tr>
 )
